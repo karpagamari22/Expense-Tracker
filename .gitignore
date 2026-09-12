@@ -1,0 +1,1 @@
+-e "db.sqlite3\n__pycache__/\n*.pyc\nmyenv/\n.env\n" 
