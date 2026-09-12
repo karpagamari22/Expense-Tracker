@@ -1,0 +1,10 @@
+{% extends 'tracker/base.html' %}
+{% block content %}
+<h4>Login</h4>
+<form method="POST" class="card p-3">
+{% csrf_token %}
+{{ form.as_p }}
+<button class="btn btn-primary">Login</button>
+</form>
+<a href="{% url 'register' %}">New user? Register</a>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'tracker/base.html' %}
+{% block content %}
+<h4>Add Expense</h4>
+<form method="POST" class="card p-3">
+  {% csrf_token %}{{ form.as_p }}
+  <button class="btn btn-success">Save</button>
+</form>
+{% endblock %}
